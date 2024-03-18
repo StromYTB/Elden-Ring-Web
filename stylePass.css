@@ -24,7 +24,7 @@
 .loginButton{
     margin-bottom: 6vh;
     min-height: 4vh;
-    background-color: rgb(18, 131, 137);
+    background-color: rgb(0, 133, 13);
     color: white;
     border: none;
     border-radius: 2vh;
@@ -32,7 +32,7 @@
 
 .loginButton:hover {
     cursor:pointer;
-    box-shadow: rgba(3, 230, 255, 0.35) 0px 5px 15px;
+    box-shadow: rgb(81, 255, 0) 0px 5px 15px;
 }
 
 h2{

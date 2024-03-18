@@ -13,7 +13,7 @@
     <div class="login">
         <div class="loginContainer">
 
-            <h2 class="loginText">Přihlašte se na naší stránku a dostanete bonus!</h2>
+            <h2 class="loginText">Přihlašte se, aby jste se dostal na naší stránku</h2>
 
         
             <input class="loginInput" placeholder="jméno" id="username">
@@ -22,10 +22,22 @@
             <input class="loginInput" placeholder="heslo" id="password">
 
         
-            <button onclick="loginFunction()" class="loginButton" id="confirm">potvrdit</button>
+            <button onclick="loginFunction()" class="loginButton" id="confirm">přihlásit se</button>
 
         
             <p class="loginOutput" id="output"></p>
+
+            <h2 class="loginText">Registrace</h2>
+
+            <input class="loginInput" placeholder="jméno k registraci" id="registrationUser">
+
+            <input class="loginInput" placeholder="heslo k registraci" id="registrationPass">
+
+            <input class="loginInput" placeholder="Zadejte heslo znova" id="registrationPassTwo">
+
+            <button onclick="putIntoArray()" class="loginButton" id="confirm">registrovat</button>
+
+            <p class="loginOutput" id="registrationOutput"></p>
         </div>
 
     </div>

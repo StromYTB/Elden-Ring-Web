@@ -1,8 +1,9 @@
 const array = [
-    "pepik.ahoj1",
-    "jana.pizza2",
-    "karel.kočka3",
-    "eva.12345",
+    "pepik.ahoj123",
+    "jana.pizza23",
+    "karel.kočka34",
+    "eva.1234567",
+    ""
 ]
 
 function loginFunction() {
@@ -24,5 +25,28 @@ function loginFunction() {
             console.log("nn")
         }
     }
+
+}
+
+function putIntoArray(){
+
+    const user = document.getElementById("registrationUser").value
+    const pass = document.getElementById("registrationPass").value
+    const passCheck = document.getElementById("registrationPassTwo").value
+
+    const registrationData = user + "." + pass
+
+    var count=array.length;
+    for(var i=0;i<count;i++)
+    {
+        if( registrationData == array[i] && pass == passCheck ){
+            document.getElementById("registrationOutput").innerHTML = "Tento uživatel už je přihlášen"
+            break
+        }else{
+            document.getElementById("registrationOutput").innerHTML = "Byl jste úspěšně registrován!"
+            array.push(user,".",pass)
+        }
+    }
+    
 
 }
